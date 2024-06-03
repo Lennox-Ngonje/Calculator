@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal</title>
+    <link rel="stylesheet" href="./Apps/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <div id="Calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="SR('r')" id="r" class="operator-btn3 btn1">&#8730;</button>
+            <button onclick="SR('s')" id="s" class="operator-btn3 btn1">x&#178;</button>
+            <button onclick="SR('t')" id="t" class="operator-btn3 btn1">x&#179</button>
+            <button onclick="appendToDisplay('&#8508') " class="operator-btn3 btn1">&#8508</button>
+
+            <button onclick="clearDisplay('AC') " class="operator-btn1">AC</button>
+            <button onclick="appendToDisplay('( )') " class="operator-btn">( )</button>
+            <button onclick="appendToDisplay('%') " class="operator-btn">%</button>
+            <button onclick="appendToDisplay('/') " class="operator-btn">&divide</button>
+            <button onclick="appendToDisplay('7') ">7</button>
+            <button onclick="appendToDisplay('8') ">8</button>
+            <button onclick="appendToDisplay('9') ">9</button>
+            <button onclick="appendToDisplay('*') " class="operator-btn">x</button>
+            <button onclick="appendToDisplay('4') ">4</button>
+            <button onclick="appendToDisplay('5') ">5</button>
+            <button onclick="appendToDisplay('6') ">6</button>
+            <button onclick="appendToDisplay('-') " class="operator-btn">-</button>
+            <button onclick="appendToDisplay('1') ">1</button>
+            <button onclick="appendToDisplay('2') ">2</button>
+            <button onclick="appendToDisplay('3') ">3</button>
+            <button onclick="appendToDisplay('+') " class="operator-btn">+</button>
+            <button onclick="back() ">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path
+                        d="M360-200q-20 0-37.5-9T294-234L120-480l174-246q11-16 28.5-25t37.5-9h400q33 0 56.5 23.5T840-680v400q0 33-23.5 56.5T760-200H360Zm400-80v-400 400Zm-400 0h400v-400H360L218-480l142 200Zm96-40 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Z" />
+                </svg>
+            </button>
+            <button onclick="appendToDisplay('0') ">0</button>
+            <button onclick="appendToDisplay('.') ">.</button>
+            <button onclick="calculate() " class="operator-btn2">=</button>
+        </div>
+    </div>
+    
+<script src="./Apps/Js/Main.js"></script>
+</body>
+</html>
